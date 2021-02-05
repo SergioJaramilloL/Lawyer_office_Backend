@@ -3,35 +3,47 @@ const { Schema, model } = require('mongoose');
 const casesSchema = new Schema ({
   typePerson: {
     type: String,
-    require: true,
+    //require: true,
   },
   typeService: {
     type: String,
-    require: true,
+    //require: true,
   },
-  typeService: {
+  typeCaso: {
     type: String,
-    require: true,
+    //require: true,
   },
   name: {
     type: String,
-    require: true,
+    //require: true,
   },
   email: {
     type: String,
-    require: true,
+    //require: true,
   },
   phone: {
     type: String,
-    require: true,
+    //require: true,
+  },
+  city: {
+    type: String,
+    //require: true,
   },
   abstract: {
     type: String,
-    require: true,
+    //require: true,
   },
   evidence: {
     type: String,
   },
+  state: {
+    type: String,
+    //require: true,
+  },
+  terms: {
+    type: Boolean,
+    //require: true,
+  }
 }, {
   timestamps: true,
 })
