@@ -44,7 +44,7 @@ module.exports = {
     }
   },
 
-  async Show(req, res) {
+  async show(req, res) {
     try {
       const { caseId } = req.params;
       const _case = await Cases.findById(caseId);

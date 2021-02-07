@@ -36,7 +36,7 @@ module.exports = {
     }
   },
 
-  async Show(req, res) {
+  async show(req, res) {
     try {
       const { blogId } = req.params;
       const blog = await Blog.findById(blogId);
