@@ -8,17 +8,17 @@ const shopSchema = new Schema({
     type: String,
     required: true,
   },
-  decription: {
+  description: {
     type: String,
     required: true,
   },
   price: {
     type: String,
-    //required: true,
+    required: true,
   },
   linkTo: {
     type: String,
-    //required: true,
+    required: true,
   },
 });
 

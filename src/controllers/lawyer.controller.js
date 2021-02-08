@@ -1,4 +1,4 @@
-const Lawyer = require('../models/blog.model');
+const Lawyer = require('../models/lawyer.model');
 
 module.exports = {
   async create (req, res) {
@@ -18,6 +18,7 @@ module.exports = {
       res.status(201).json({ message: 'Lawyer successfully stored', data: lawyer });
     } catch ( error ) {
       res.status(400).json({ message: 'Lawyer could not be stored' });
+      console.log(error);
     }
   },
 
